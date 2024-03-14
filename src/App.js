@@ -1,25 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch('http://app:8000/api/test')
-      .then(response => {
-        if (!response.ok) { throw new Error(`HTTP error! status: ${response.status}`); }
-        return response.json();
-      })
-      .then(data => setData(data))
-      .catch(error => setError(error.toString()));
-  }, []);
-
   return (
-    <div>
-      <h1>Hello, React!</h1>
-      <p>The application is running and working сука блядь.</p>
-      {error && <p>Error: {error}</p>}
-      {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
