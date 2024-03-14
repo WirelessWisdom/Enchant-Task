@@ -7,7 +7,7 @@ function App() {
   const [input, setInput] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/test')
+    fetch('http://app:8000/api/test')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
