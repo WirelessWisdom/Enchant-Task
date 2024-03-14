@@ -1,0 +1,372 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [app internal] load build definition from Dockerfile
+#1 transferring dockerfile: 660B done
+#1 DONE 0.1s
+
+#2 [frontend internal] load build definition from FrontendDockerfile
+#2 transferring dockerfile: 451B done
+#2 DONE 0.1s
+
+#3 [frontend internal] load metadata for docker.io/library/node:21
+#3 DONE 1.8s
+
+#4 [app internal] load metadata for docker.io/library/python:3.12
+#4 DONE 1.8s
+
+#5 [app internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [frontend internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [app internal] load build context
+#7 transferring context: 630B done
+#7 DONE 0.0s
+
+#8 [frontend 1/4] FROM docker.io/library/node:21@sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8
+#8 resolve docker.io/library/node:21@sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8 done
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 0B / 49.59MB 0.1s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 0B / 23.58MB 0.1s
+#8 sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8 1.21kB / 1.21kB done
+#8 sha256:eedd89bb0f9720c848c80b38dfccea2c768e558165d5f4591b0b0eb8338b3f89 2.00kB / 2.00kB done
+#8 sha256:0ef75c94f02b3eed616946c3abe0104be31affb195a2d80d9f733bd18e27b948 7.35kB / 7.35kB done
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 0B / 63.99MB 0.1s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 3.15MB / 49.59MB 0.3s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 13.63MB / 49.59MB 0.5s
+#8 ...
+
+#9 [frontend internal] load build context
+#9 transferring context: 718.85kB 0.5s done
+#9 DONE 0.5s
+
+#8 [frontend 1/4] FROM docker.io/library/node:21@sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 4.19MB / 63.99MB 0.6s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 20.97MB / 49.59MB 0.8s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 2.10MB / 23.58MB 0.8s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 24.12MB / 49.59MB 0.9s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 5.24MB / 23.58MB 0.9s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 10.49MB / 63.99MB 0.9s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 29.36MB / 49.59MB 1.2s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 10.49MB / 23.58MB 1.2s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 16.78MB / 63.99MB 1.2s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 34.60MB / 49.59MB 1.4s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 14.68MB / 23.58MB 1.4s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 37.75MB / 49.59MB 1.5s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 16.78MB / 23.58MB 1.5s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 24.12MB / 63.99MB 1.5s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 19.92MB / 23.58MB 1.6s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 45.09MB / 49.59MB 1.9s
+#8 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 23.58MB / 23.58MB 1.9s done
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 33.55MB / 63.99MB 1.9s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 0B / 202.54MB 1.9s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 48.23MB / 49.59MB 2.0s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 37.75MB / 63.99MB 2.0s
+#8 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 49.59MB / 49.59MB 2.1s done
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 41.94MB / 63.99MB 2.1s
+#8 extracting sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7
+#8 sha256:ab8d26971fbf681291cc2894e053fd2db1aa64b90ffef7520488a97a85a712a8 0B / 3.37kB 2.2s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 46.01MB / 63.99MB 2.3s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 51.38MB / 63.99MB 2.4s
+#8 sha256:ab8d26971fbf681291cc2894e053fd2db1aa64b90ffef7520488a97a85a712a8 3.37kB / 3.37kB 2.3s done
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 0B / 49.57MB 2.4s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 56.62MB / 63.99MB 2.5s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 10.49MB / 202.54MB 2.5s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 63.99MB / 63.99MB 2.9s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 4.19MB / 49.57MB 2.9s
+#8 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 63.99MB / 63.99MB 2.9s done
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 23.07MB / 202.54MB 3.0s
+#8 sha256:f28e70d14cf14990aff22d085291a44e2d39ee6c2f70187bc8eded33ce529a71 0B / 2.23MB 3.0s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 8.39MB / 49.57MB 3.1s
+#8 sha256:f28e70d14cf14990aff22d085291a44e2d39ee6c2f70187bc8eded33ce529a71 1.05MB / 2.23MB 3.3s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 35.65MB / 202.54MB 3.4s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 14.68MB / 49.57MB 3.4s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 19.92MB / 49.57MB 3.6s
+#8 sha256:f28e70d14cf14990aff22d085291a44e2d39ee6c2f70187bc8eded33ce529a71 2.23MB / 2.23MB 3.6s done
+#8 sha256:b82cdbb2c29e6e18cb058bfd074b806eb4d59b72622d74a13622fb806c2eab09 0B / 450B 3.6s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 49.28MB / 202.54MB 3.8s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 22.79MB / 49.57MB 3.8s
+#8 extracting sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 1.8s done
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 28.31MB / 49.57MB 4.0s
+#8 sha256:b82cdbb2c29e6e18cb058bfd074b806eb4d59b72622d74a13622fb806c2eab09 450B / 450B 3.8s done
+#8 extracting sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 65.01MB / 202.54MB 4.2s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 33.55MB / 49.57MB 4.2s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 36.97MB / 49.57MB 4.5s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 82.84MB / 202.54MB 4.7s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 44.04MB / 49.57MB 4.7s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 47.19MB / 49.57MB 4.9s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 98.57MB / 202.54MB 5.5s
+#8 sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 49.57MB / 49.57MB 5.4s done
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 111.15MB / 202.54MB 6.2s
+#8 extracting sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 2.2s done
+#8 extracting sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 0.1s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 121.63MB / 202.54MB 6.8s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 132.12MB / 202.54MB 7.5s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 145.75MB / 202.54MB 7.9s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 159.12MB / 202.54MB 8.2s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 173.02MB / 202.54MB 8.4s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 185.13MB / 202.54MB 8.7s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 197.13MB / 202.54MB 8.8s
+#8 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 202.54MB / 202.54MB 9.3s done
+#8 extracting sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 3.1s done
+#8 extracting sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c
+#8 ...
+
+#10 [app 1/4] FROM docker.io/library/python:3.12@sha256:336461f63f4eb1100e178d5acbfea3d1a5b2a53dea88aa0f9b8482d4d02e981c
+#10 resolve docker.io/library/python:3.12@sha256:336461f63f4eb1100e178d5acbfea3d1a5b2a53dea88aa0f9b8482d4d02e981c done
+#10 sha256:ff82813aa87b258adaa77a33236e8a2580eccb6939c4f3d53b3271a61584a3ef 7.13kB / 7.13kB done
+#10 sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 49.59MB / 49.59MB 2.1s done
+#10 sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 23.58MB / 23.58MB 1.9s done
+#10 sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 63.99MB / 63.99MB 2.9s done
+#10 sha256:336461f63f4eb1100e178d5acbfea3d1a5b2a53dea88aa0f9b8482d4d02e981c 2.14kB / 2.14kB done
+#10 sha256:b41e2fb7fa4f905ed4c09cad887f4cfee2326539c7afff714b2b9e0fbff8ecec 2.01kB / 2.01kB done
+#10 sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 202.54MB / 202.54MB 9.3s done
+#10 extracting sha256:6ee0baa58a3d368515336c1b5c1cade29c975e1b49a832f19e22f4c46f4a23a7 1.8s done
+#10 sha256:91c9495e7b5aa8d2de58884c4284dc52584e0ce5041c2e394eb95f327117228b 6.47MB / 6.47MB 4.7s done
+#10 extracting sha256:992a857ef57584af4efb4c62d68456f1e8513c95d6248fd796a9ea7f45da4d79 2.2s done
+#10 sha256:9001688a971d05a3dc4457a40acedb62234a5b5a7bd49dd3179fcfdb1a26d764 22.22MB / 22.22MB 7.1s done
+#10 sha256:ad27ab4515afc38b731adc43c8946d8aae3d77a6e6774530700aa4e4c0783ae9 244B / 244B 6.1s done
+#10 sha256:b152d3b07485a5e891fc0d7373b5db341cc94f33ad8435e4ec581cc7fe45b118 2.70MB / 2.70MB 7.5s done
+#10 extracting sha256:3861a6536e4e911503e7d2fc8f93228491ba45d1e5def0d2f3723e32e03d7466 3.1s done
+#10 ...
+
+#8 [frontend 1/4] FROM docker.io/library/node:21@sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8
+#8 extracting sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 4.9s done
+#8 extracting sha256:ab8d26971fbf681291cc2894e053fd2db1aa64b90ffef7520488a97a85a712a8 done
+#8 extracting sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d
+#8 ...
+
+#10 [app 1/4] FROM docker.io/library/python:3.12@sha256:336461f63f4eb1100e178d5acbfea3d1a5b2a53dea88aa0f9b8482d4d02e981c
+#10 extracting sha256:e5e6faea05ead1ac9cd3244827816e2385b0d62299f7937a4574fc5a9651624c 4.9s done
+#10 extracting sha256:91c9495e7b5aa8d2de58884c4284dc52584e0ce5041c2e394eb95f327117228b 0.4s done
+#10 extracting sha256:9001688a971d05a3dc4457a40acedb62234a5b5a7bd49dd3179fcfdb1a26d764 0.5s done
+#10 extracting sha256:ad27ab4515afc38b731adc43c8946d8aae3d77a6e6774530700aa4e4c0783ae9 done
+#10 extracting sha256:b152d3b07485a5e891fc0d7373b5db341cc94f33ad8435e4ec581cc7fe45b118 0.2s done
+#10 DONE 16.2s
+
+#8 [frontend 1/4] FROM docker.io/library/node:21@sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8
+#8 ...
+
+#11 [app 2/4] COPY requirements.txt /app/requirements.txt
+#11 DONE 0.1s
+
+#8 [frontend 1/4] FROM docker.io/library/node:21@sha256:b9ccc4aca32eebf124e0ca0fd573dacffba2b9236987a1d4d2625ce3c162ecc8
+#8 extracting sha256:92111119a6881cbf9d3f139f6587ce64844620f01462519e1256101541b4ed6d 1.9s done
+#8 extracting sha256:f28e70d14cf14990aff22d085291a44e2d39ee6c2f70187bc8eded33ce529a71 0.1s done
+#8 extracting sha256:b82cdbb2c29e6e18cb058bfd074b806eb4d59b72622d74a13622fb806c2eab09 done
+#8 DONE 16.8s
+
+#12 [frontend 2/4] WORKDIR /app
+#12 DONE 0.1s
+
+#13 [frontend 3/4] COPY package*.json ./
+#13 DONE 0.0s
+
+#14 [app 3/4] RUN pip install --no-cache-dir -r /app/requirements.txt
+#14 1.923 Collecting fastapi==0.110.0 (from -r /app/requirements.txt (line 1))
+#14 2.343   Downloading fastapi-0.110.0-py3-none-any.whl.metadata (25 kB)
+#14 2.724 Collecting pydantic==2.6.3 (from -r /app/requirements.txt (line 2))
+#14 2.790   Downloading pydantic-2.6.3-py3-none-any.whl.metadata (84 kB)
+#14 2.865      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.4/84.4 kB 1.1 MB/s eta 0:00:00
+#14 3.213 Collecting sqlalchemy==2.0.28 (from -r /app/requirements.txt (line 3))
+#14 3.281   Downloading SQLAlchemy-2.0.28-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.6 kB)
+#14 3.427 Collecting uvicorn==0.28.0 (from -r /app/requirements.txt (line 4))
+#14 3.659   Downloading uvicorn-0.28.0-py3-none-any.whl.metadata (6.3 kB)
+#14 3.848 Collecting psycopg2==2.9.9 (from -r /app/requirements.txt (line 5))
+#14 3.924   Downloading psycopg2-2.9.9.tar.gz (384 kB)
+#14 4.029      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 384.9/384.9 kB 3.6 MB/s eta 0:00:00
+#14 4.065   Preparing metadata (setup.py): started
+#14 4.424   Preparing metadata (setup.py): finished with status 'done'
+#14 4.506 Collecting Jinja2==3.1.3 (from -r /app/requirements.txt (line 6))
+#14 4.571   Downloading Jinja2-3.1.3-py3-none-any.whl.metadata (3.3 kB)
+#14 4.787 Collecting starlette==0.36.3 (from -r /app/requirements.txt (line 7))
+#14 4.859   Downloading starlette-0.36.3-py3-none-any.whl.metadata (5.9 kB)
+#14 4.968 Collecting typing-extensions>=4.8.0 (from fastapi==0.110.0->-r /app/requirements.txt (line 1))
+#14 5.038   Downloading typing_extensions-4.10.0-py3-none-any.whl.metadata (3.0 kB)
+#14 5.119 Collecting annotated-types>=0.4.0 (from pydantic==2.6.3->-r /app/requirements.txt (line 2))
+#14 5.329   Downloading annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+#14 6.478 Collecting pydantic-core==2.16.3 (from pydantic==2.6.3->-r /app/requirements.txt (line 2))
+#14 6.548   Downloading pydantic_core-2.16.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.5 kB)
+#14 6.897 Collecting greenlet!=0.4.17 (from sqlalchemy==2.0.28->-r /app/requirements.txt (line 3))
+#14 6.973   Downloading greenlet-3.0.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.8 kB)
+#14 7.053 Collecting click>=7.0 (from uvicorn==0.28.0->-r /app/requirements.txt (line 4))
+#14 7.120   Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+#14 7.187 Collecting h11>=0.8 (from uvicorn==0.28.0->-r /app/requirements.txt (line 4))
+#14 7.331   Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+#14 7.445 Collecting MarkupSafe>=2.0 (from Jinja2==3.1.3->-r /app/requirements.txt (line 6))
+#14 7.511   Downloading MarkupSafe-2.1.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.0 kB)
+#14 7.588 Collecting anyio<5,>=3.4.0 (from starlette==0.36.3->-r /app/requirements.txt (line 7))
+#14 7.653   Downloading anyio-4.3.0-py3-none-any.whl.metadata (4.6 kB)
+#14 7.736 Collecting idna>=2.8 (from anyio<5,>=3.4.0->starlette==0.36.3->-r /app/requirements.txt (line 7))
+#14 7.852   Downloading idna-3.6-py3-none-any.whl.metadata (9.9 kB)
+#14 7.922 Collecting sniffio>=1.1 (from anyio<5,>=3.4.0->starlette==0.36.3->-r /app/requirements.txt (line 7))
+#14 7.988   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+#14 8.074 Downloading fastapi-0.110.0-py3-none-any.whl (92 kB)
+#14 8.135    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.1/92.1 kB 326.4 MB/s eta 0:00:00
+#14 8.206 Downloading pydantic-2.6.3-py3-none-any.whl (395 kB)
+#14 8.384    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 395.2/395.2 kB 2.2 MB/s eta 0:00:00
+#14 8.454 Downloading SQLAlchemy-2.0.28-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.2 MB)
+#14 ...
+
+#15 [frontend 4/4] RUN npm install
+#15 7.906 npm WARN ERESOLVE overriding peer dependency
+#15 7.906 npm WARN While resolving: @testing-library/react@13.4.0
+#15 7.906 npm WARN Found: react@17.0.2
+#15 7.906 npm WARN node_modules/react
+#15 7.906 npm WARN   react@"^17.0.2" from the root project
+#15 7.907 npm WARN   2 more (react-dom, react-scripts)
+#15 7.907 npm WARN 
+#15 7.907 npm WARN Could not resolve dependency:
+#15 7.907 npm WARN peer react@"^18.0.0" from @testing-library/react@13.4.0
+#15 7.907 npm WARN node_modules/@testing-library/react
+#15 7.907 npm WARN 
+#15 7.907 npm WARN Conflicting peer dependency: react@18.2.0
+#15 7.907 npm WARN node_modules/react
+#15 7.907 npm WARN   peer react@"^18.0.0" from @testing-library/react@13.4.0
+#15 7.907 npm WARN   node_modules/@testing-library/react
+#15 7.908 npm WARN ERESOLVE overriding peer dependency
+#15 7.908 npm WARN While resolving: @testing-library/react@13.4.0
+#15 7.908 npm WARN Found: react-dom@17.0.2
+#15 7.908 npm WARN node_modules/react-dom
+#15 7.908 npm WARN   react-dom@"^17.0.2" from the root project
+#15 7.908 npm WARN 
+#15 7.908 npm WARN Could not resolve dependency:
+#15 7.908 npm WARN peer react-dom@"^18.0.0" from @testing-library/react@13.4.0
+#15 7.908 npm WARN node_modules/@testing-library/react
+#15 7.908 npm WARN 
+#15 7.908 npm WARN Conflicting peer dependency: react-dom@18.2.0
+#15 7.908 npm WARN node_modules/react-dom
+#15 7.908 npm WARN   peer react-dom@"^18.0.0" from @testing-library/react@13.4.0
+#15 7.908 npm WARN   node_modules/@testing-library/react
+#15 ...
+
+#14 [app 3/4] RUN pip install --no-cache-dir -r /app/requirements.txt
+#14 12.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 814.3 kB/s eta 0:00:00
+#14 12.57 Downloading uvicorn-0.28.0-py3-none-any.whl (60 kB)
+#14 12.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 kB 449.9 kB/s eta 0:00:00
+#14 12.75 Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+#14 12.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 581.0 kB/s eta 0:00:00
+#14 13.10 Downloading starlette-0.36.3-py3-none-any.whl (71 kB)
+#14 13.23    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.5/71.5 kB 488.6 kB/s eta 0:00:00
+#14 13.30 Downloading pydantic_core-2.16.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.9 MB)
+#14 19.21    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 315.9 kB/s eta 0:00:00
+#14 19.28 Downloading annotated_types-0.6.0-py3-none-any.whl (12 kB)
+#14 19.46 Downloading anyio-4.3.0-py3-none-any.whl (85 kB)
+#14 19.69    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.6/85.6 kB 409.6 kB/s eta 0:00:00
+#14 19.75 Downloading click-8.1.7-py3-none-any.whl (97 kB)
+#14 20.09    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 289.4 kB/s eta 0:00:00
+#14 20.16 Downloading greenlet-3.0.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (660 kB)
+#14 21.92    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.5/660.5 kB 375.4 kB/s eta 0:00:00
+#14 22.07 Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+#14 22.18    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 596.2 kB/s eta 0:00:00
+#14 22.25 Downloading MarkupSafe-2.1.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (29 kB)
+#14 22.36 Downloading typing_extensions-4.10.0-py3-none-any.whl (33 kB)
+#14 22.54 Downloading idna-3.6-py3-none-any.whl (61 kB)
+#14 22.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.6/61.6 kB 530.5 kB/s eta 0:00:00
+#14 22.71 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#14 22.98 Building wheels for collected packages: psycopg2
+#14 22.98   Building wheel for psycopg2 (setup.py): started
+#14 28.67   Building wheel for psycopg2 (setup.py): finished with status 'done'
+#14 28.67   Created wheel for psycopg2: filename=psycopg2-2.9.9-cp312-cp312-linux_aarch64.whl size=512495 sha256=290c5c3cae028644fcd49d447a7ed854945d439b0391741c02a76584af8cdabe
+#14 28.67   Stored in directory: /tmp/pip-ephem-wheel-cache-40ik_51o/wheels/ff/ac/80/7ccec163e3d05ae2112311b895132409b9abfd7e0c1c6b5183
+#14 28.68 Successfully built psycopg2
+#14 28.80 Installing collected packages: typing-extensions, sniffio, psycopg2, MarkupSafe, idna, h11, greenlet, click, annotated-types, uvicorn, sqlalchemy, pydantic-core, Jinja2, anyio, starlette, pydantic, fastapi
+#14 30.18 Successfully installed Jinja2-3.1.3 MarkupSafe-2.1.5 annotated-types-0.6.0 anyio-4.3.0 click-8.1.7 fastapi-0.110.0 greenlet-3.0.3 h11-0.14.0 idna-3.6 psycopg2-2.9.9 pydantic-2.6.3 pydantic-core-2.16.3 sniffio-1.3.1 sqlalchemy-2.0.28 starlette-0.36.3 typing-extensions-4.10.0 uvicorn-0.28.0
+#14 30.18 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#14 DONE 30.9s
+
+#15 [frontend 4/4] RUN npm install
+#15 ...
+
+#16 [app 4/4] WORKDIR /app
+#16 DONE 0.0s
+
+#17 [app] exporting to image
+#17 exporting layers
+#17 exporting layers 0.2s done
+#17 writing image sha256:dd242630f80cf89e436e4446b8d99dbe9fb577aa9edd849952423de9d89b36b5
+#17 writing image sha256:dd242630f80cf89e436e4446b8d99dbe9fb577aa9edd849952423de9d89b36b5 done
+#17 naming to docker.io/library/enchant-task-test-app done
+#17 DONE 0.2s
+
+#15 [frontend 4/4] RUN npm install
+#15 99.15 npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+#15 99.31 npm WARN deprecated rollup-plugin-terser@5.3.1: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+#15 99.35 npm WARN deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+#15 99.63 npm WARN deprecated flatten@1.0.3: flatten is deprecated in favor of utility frameworks such as lodash.
+#15 99.66 npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+#15 99.86 npm WARN deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+#15 99.86 npm WARN deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+#15 99.86 npm WARN deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+#15 99.86 npm WARN deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+#15 99.87 npm WARN deprecated figgy-pudding@3.5.2: This module is no longer supported.
+#15 99.90 npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+#15 99.94 npm WARN deprecated domexception@2.0.1: Use your platform's native DOMException instead
+#15 99.97 npm WARN deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+#15 99.98 npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+#15 99.99 npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+#15 99.99 npm WARN deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+#15 100.1 npm WARN deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+#15 100.2 npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+#15 100.7 npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+#15 100.7 npm WARN deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+#15 100.8 npm WARN deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+#15 101.2 npm WARN deprecated rollup-plugin-babel@4.4.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-babel.
+#15 101.4 npm WARN deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+#15 101.5 npm WARN deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+#15 101.5 npm WARN deprecated sane@4.1.0: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+#15 101.6 npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+#15 101.7 npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+#15 101.9 npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+#15 102.1 npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+#15 102.3 npm WARN deprecated workbox-google-analytics@5.1.4: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
+#15 103.2 npm WARN deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+#15 103.7 npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+#15 106.0 npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+#15 107.5 
+#15 107.5 added 1953 packages, and audited 1954 packages in 2m
+#15 107.5 
+#15 107.5 200 packages are looking for funding
+#15 107.5   run `npm fund` for details
+#15 107.5 
+#15 107.5 107 vulnerabilities (1 low, 80 moderate, 17 high, 9 critical)
+#15 107.5 
+#15 107.5 To address issues that do not require attention, run:
+#15 107.5   npm audit fix
+#15 107.5 
+#15 107.5 To address all issues (including breaking changes), run:
+#15 107.5   npm audit fix --force
+#15 107.5 
+#15 107.5 Run `npm audit` for details.
+#15 DONE 108.0s
+
+#18 [frontend] exporting to image
+#18 exporting layers
+#18 exporting layers 4.0s done
+#18 writing image sha256:72533d656ee43b31fc30806770483ad63d3751a106dbb95d675d2e7e60d8a44c done
+#18 naming to docker.io/library/enchant-task-test-frontend done
+#18 DONE 4.1s
+Attaching to app-1, db-1, frontend-1
+db-1        | 
+db-1        | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db-1        | 
+frontend-1  | 
+frontend-1  | > Enchant-Task-Test@1.0.0 start
+frontend-1  | > react-scripts start
+frontend-1  | 
+frontend-1  | Starting the development server...
+frontend-1  | 
+frontend-1  | Compiled successfully!
+frontend-1  | 
+frontend-1  | You can now view Enchant-Task-Test in the browser.
+frontend-1  | 
+frontend-1  |   Local:            http://localhost:3000
+frontend-1  |   On Your Network:  http://172.20.0.2:3000
+frontend-1  | 
+frontend-1  | Note that the development build is not optimized.
+frontend-1  | To create a production build, use npm run build.
+frontend-1  | 
+frontend-1  | webpack compiled successfully
