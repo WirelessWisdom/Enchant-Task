@@ -1,0 +1,19 @@
+## PostgreSQL settings for db / user initialization
+## ref: https://github.com/helm/charts/blob/master/stable/postgresql/README.md
+postgresqlUsername: "enchant-task-user"
+postgresqlPassword: "enchant-task-postgresql"
+postgresqlDatabase: "enchant-task-data"
+
+fullnameOverride: "enchant-task-postgresql"
+
+resources:
+  requests:
+    memory: 256Miminiku
+    cpu: 100m
+  limits:
+    memory: 1Gi
+    cpu: 250m
+image:
+  tag: "14.3.0"
+persistence:
+  enabled: false
